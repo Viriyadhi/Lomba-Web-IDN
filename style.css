@@ -7,7 +7,7 @@
 
 footer {
     padding: 5.5rem 9rem;
-    background: linear-gradient(55deg, #69C570, #B3F941);
+    background: linear-gradient(90deg, #69C570, #B3F941);
     justify-content: center;
     display: flex;
 }
@@ -20,12 +20,21 @@ footer hr {
 }
 
 .footer-card {
+    box-sizing: border-box;
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.footer-card:nth-last-child(1) {
+    flex: 2;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 .footer-card > p {
+    margin: 0 1rem;
     font-size: 1.5rem;
     font-weight: bold;
     color: #fff;
@@ -36,4 +45,26 @@ footer hr {
     color: #fff;
     font-size: 1.1rem;
     margin: 1rem 0;
+}
+
+.footer-information-card {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: 1rem 0;
+}
+
+.footer-information-card > img {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin: 0 0.5rem;
+    box-sizing: border-box;
+}
+
+.footer-social-card {
+    display: flex;
+}
+
+.footer-social-card > img {
+    margin: 0 1rem;
 }
