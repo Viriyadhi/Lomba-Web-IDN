@@ -29,14 +29,14 @@ html::-webkit-scrollbar {
 
 .main-container > img {
     flex: 1;
-    width: 60%;
+    width: 55%;
 }
 
 .main-container > div {
-    flex: 3;
+    flex: 2;
     display: flex;
     flex-direction: column;
-    gap: 1.75rem;
+    gap: 2rem;
 }
 
 .main-container h1 {
@@ -137,4 +137,54 @@ html::-webkit-scrollbar {
     background-color: #98EB51;
     padding: 0.75rem 0;
     margin: 1rem 0;
+}
+
+.map {
+    background-color: #F2F0F4;
+}
+
+.map-container {
+    display: flex;
+    width: min(95%, 1400px);
+    margin: auto;
+}
+
+.map-container h2 {
+    padding: 0 0 0 7rem;
+    font-size: clamp(2.25rem, 6vw, 8rem);
+    white-space: nowrap;
+    color: #1D1534;
+}
+
+.map-container h2::before {
+    content: "Dukung !";
+    position: relative;
+    font-size: 0.8em;
+    top: clamp(-2rem, -1.5vh, -4rem);
+    left: -5rem;
+    transform: rotate(-10deg);
+    display: block;
+    color: #55AD7A;
+}
+
+.map-container p {
+    margin: 2rem 0 0 7rem;
+    font-size: 1.5rem;
+}
+
+.map-container a {
+    color: #1D1534;
+    background-color: #98EB51;
+    text-decoration: none;
+    font-size: 2.5rem;
+    padding: 0.4rem 2rem;
+    border-radius: 0.8rem;
+    margin: 5rem 7rem;
+    display: block;
+    width: fit-content;
+}
+
+.map-container img {
+    width: 45%;
+    object-fit: contain;
 }
