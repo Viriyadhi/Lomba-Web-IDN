@@ -5,7 +5,7 @@
 
 html {
     display: block;
-    overflow: clip!important;
+    overflow: clip !important;
 }
 
 html::-webkit-scrollbar {
@@ -13,26 +13,26 @@ html::-webkit-scrollbar {
 }
 
 .main {
-    background: linear-gradient(90deg, #7FDD65 3.98%, #87E56E 26.6%, #97F361 54.92%, #B3F941 117.6%);
+    background: linear-gradient( 90deg, #7fdd65 3.98%, #87e56e 26.6%, #97f361 54.92%, #b3f941 117.6%);
     z-index: 2;
 }
 
 .main-container {
     display: flex;
-    padding: 7rem 0;
-    justify-content: space-evenly;
+    padding: 7rem 0rem;
+    justify-content: space-between;
     align-items: center;
     width: min(90%, 1200px);
     margin: auto;
     gap: 5vw;
 }
 
-.main-container > img {
+.main-container>img {
     flex: 1;
     width: 60%;
 }
 
-.main-container > div {
+.main-container>div {
     flex: 3;
     display: flex;
     flex-direction: column;
@@ -48,14 +48,14 @@ html::-webkit-scrollbar {
 }
 
 .class {
-    background-color: #1D1534;
+    background-color: #1d1534;
 }
 
-.class > svg {
+.class>svg {
     width: 100%;
 }
 
-.class > hr {
+.class>hr {
     width: min(90%, 1200px);
     margin: auto;
     border-style: solid;
@@ -74,7 +74,7 @@ html::-webkit-scrollbar {
     gap: 1.5rem;
 }
 
-.class-container > a {
+.class-container>a {
     display: flex;
     justify-content: end;
     gap: 1rem;
@@ -86,13 +86,13 @@ html::-webkit-scrollbar {
     margin: 1rem;
 }
 
-.class-container > div {
+.class-container>div {
     margin: 0 1rem;
     display: flex;
     justify-content: space-evenly;
 }
 
-.class-container > h2 {
+.class-container>h2 {
     margin: 0 1.5rem;
     font-size: 3rem;
     font-weight: semibold;
@@ -112,8 +112,8 @@ html::-webkit-scrollbar {
 
 .class-card h6 {
     font-size: 1.25rem;
-    color: #14142B;
-    background-color: #98EB51;
+    color: #14142b;
+    background-color: #98eb51;
     display: inline;
     width: fit-content;
     padding: 0.5rem;
@@ -129,12 +129,12 @@ html::-webkit-scrollbar {
 
 .class-card a {
     text-decoration: none;
-    color: #1D1534;
+    color: #1d1534;
     font-size: 2rem;
     border-radius: 20px;
     width: min(90%, 400px);
     text-align: center;
-    background-color: #98EB51;
+    background-color: #98eb51;
     padding: 0.75rem 0;
     margin: 1rem 0;
 }

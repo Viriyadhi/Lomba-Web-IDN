@@ -6,7 +6,7 @@
 }
 
 footer {
-    padding: 5.5rem 9rem;
+    padding: 2rem 30rem;
     background: linear-gradient(90deg, #69c570, #b3f941);
     justify-content: center;
     display: flex;
@@ -36,16 +36,17 @@ footer hr {
 .footer-card>p {
     white-space: nowrap;
     margin: 0 1rem;
-    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.45rem;
     font-weight: bold;
     color: #fff;
 }
 
 .footer-card>a {
     text-decoration: none;
-    color: #fff;
-    font-size: 1.1rem;
-    margin: 1rem 0;
+    color: #ffffff;
+    font-size: 1rem;
+    margin: 1.25rem 0rem;
 }
 
 .footer-information-card {
@@ -158,4 +159,66 @@ footer hr {
 
 iframe {
     width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #87e56e0d;
+    padding: 1.335rem 5.75rem;
+    box-shadow: 0px 1px 1px 1px #524b4b1a;
+    background: linear-gradient( 90deg, #7fdd65 3.98%, #87e56e 26.6%, #97f361 54.92%, #b3f941 117.6%);
+}
+
+nav h1 {
+    font-size: 3rem;
+    box-sizing: border-box;
+    color: #1d1534;
+}
+
+nav h1::before {
+    content: "Sip";
+    color: #51854ae0;
+}
+
+.navbar-links-container {
+    display: flex;
+    justify-content: end;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #1d1534;
+    margin: 0 26px;
+    outline: none;
+}
+
+@media (max-width: 900px) {
+    nav {
+        padding: 1.75rem 2rem;
+    }
+    nav h1 {
+        font-size: 2rem;
+    }
+    nav a {
+        font-size: 1em;
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        padding: 1rem 0.5rem;
+    }
+    nav h1 {
+        font-size: 1rem;
+    }
+    nav a {
+        font-size: 0.75rem;
+        margin: 0 0.5rem;
+    }
 }
