@@ -33,7 +33,7 @@ footer hr {
     align-items: flex-start;
 }
 
-.footer-card > p {
+.footer-card>p {
     white-space: nowrap;
     margin: 0 1rem;
     font-size: min(3.5vw, 1.5rem);
@@ -41,7 +41,7 @@ footer hr {
     color: #fff;
 }
 
-.footer-card > a {
+.footer-card>a {
     text-decoration: none;
     color: #fff;
     font-size: min(1.75vw, 1.1rem);
