@@ -1,0 +1,133 @@
+cards = 
+[
+    {
+        "detail": {
+            "p": "Jakarta Utara",
+            "img": false
+        },
+        "childrens": [
+            {
+                "detail": {
+                    "p": "TPA Rukun Jaya",
+                    "img": false
+                },
+                "description": {
+                    "text": [
+                        "Lorem Ipsum",
+                        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed dolorem maiores, corrupti minima perferendis iusto quam ipsa debitis voluptatibus, labore ab tempora magnam ratione similique iste obcaecati excepturi laudantium ut veritatis eaque quas tempore reprehenderit. Reiciendis, architecto, voluptate eos tempora explicabo sunt repudiandae a, velit quis vitae veniam dolore in."
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "detail": {
+            "p": "Jakarta Selatan",
+            "img": false
+        },
+        "childrens": [
+            {
+                "detail": {
+                    "p": "TPA Hebat Kesatuan",
+                    "img": false
+                },
+                "description": {
+                    "text": [
+                        "Lorem Ipsum",
+                        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed dolorem maiores, corrupti minima perferendis iusto quam ipsa debitis voluptatibus, labore ab tempora magnam ratione similique iste obcaecati excepturi laudantium ut veritatis eaque quas tempore reprehenderit. Reiciendis, architecto, voluptate eos tempora explicabo sunt repudiandae a, velit quis vitae veniam dolore in."
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "detail": {
+            "p": "Jakarta Timur",
+            "img": false
+        },
+        "childrens": [
+
+        ]
+    },
+    {
+        "detail": {
+            "p": "Jakarta Barat",
+            "img": false
+        },
+        "childrens": [
+
+        ]
+    },
+    {
+        "detail": {
+            "p": "Tangerang",
+            "img": false
+        },
+        "childrens": [
+
+        ]
+    },
+    {
+        "detail": {
+            "p": "Bogor",
+            "img": false
+        },
+        "childrens": [
+
+        ]
+    },
+    {
+        "detail": {
+            "p": "Bekasi",
+            "img": false
+        },
+        "childrens": [
+
+        ]
+    },
+    {
+        "detail": {
+            "p": "Bandung",
+            "img": false
+        },
+        "childrens": [
+
+        ]
+    },
+    {
+        "detail": {
+            "p": "Semarang",
+            "img": false
+        },
+        "childrens": [
+
+        ]
+    },
+    {
+        "detail": {
+            "p": "Yogyakarta",
+            "img": false
+        },
+        "childrens": [
+
+        ]
+    },
+    {
+        "detail": {
+            "p": "Surabaya",
+            "img": false
+        },
+        "childrens": [
+
+        ]
+    },
+    {
+        "detail": {
+            "p": "Malang",
+            "img": false
+        },
+        "childrens": [
+
+        ]
+    }
+]
