@@ -24,15 +24,20 @@ function createCard(card, parent) {
     if (card.description) {
         const cardDesc = document.createElement('div');
         cardDesc.className = "card-desc";
-        let cardP = document.createElement('p');
-        cardP.innerHTML = card.detail.p;
-        cardDesc.appendChild(cardP);
+        card.description.text.forEach(text => {
+            let cardP = document.createElement('p');
+            cardP.innerHTML = text;
+            cardDesc.appendChild(cardP);
+        });
         cardElement.appendChild(cardDesc);
     }
     if (card.childrens) {
         card.childrens.forEach(child => createCard(child, cardElement));
     }
     if (parent) {
+        if (cardElement.querySelector('* > .card-desc')) {
+            cardElement.querySelector('* > .card-desc').style.display = 'none';
+        }
         cardElement.style.display = 'none';
         parent.appendChild(cardElement);
     }
@@ -43,16 +48,18 @@ cards.forEach(card => createCard(card));
 
 for (let index = 0; index < elements.length; index++) {
     let card = elements[index];
+    let clicked = cards[index].detail.img;
     if (index > 5) {
         card.style.display = 'none';
     }
 
-    card.addEventListener('click', e => {
-        let button = card.querySelector('* > img');
+    let button = card.querySelector('* > img');
+    button.addEventListener('click', e => {
+        clicked = !clicked;
         card.querySelectorAll('* > .card').forEach(child => {
-            child.style.display = (button.style.transform == '') ? 'block' : 'none';
+            child.style.display = (!clicked) ? 'block' : 'none';
         });
-        button.style.transform = (button.style.transform == '') ? 'rotate(180deg)' : null;
+        button.style.transform = (!clicked) ? 'rotate(180deg)' : '';
     });
     cardContainer.appendChild(card);
 }
