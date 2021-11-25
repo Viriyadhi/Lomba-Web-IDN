@@ -9,16 +9,12 @@ function createCard(card, parent) {
     if (card.detail) {
         const cardDetail = document.createElement('div');
         cardDetail.className = "card-detail";
-        if (card.detail.p) {
-            let cardP = document.createElement('p');
-            cardP.innerHTML = card.detail.p;
-            cardDetail.appendChild(cardP);
-        }
-        if (card.detail.img != null || card.detail.img != undefined) {
-            let cardImg = document.createElement('img');
-            cardImg.src = '../../assets/akar-icons_chevron-down.png';
-            cardDetail.appendChild(cardImg);
-        }
+        let cardP = document.createElement('p');
+        cardP.innerHTML = card.detail;
+        cardDetail.appendChild(cardP);
+        let cardImg = document.createElement('img');
+        cardImg.src = '../../assets/akar-icons_chevron-down.png';
+        cardDetail.appendChild(cardImg);
         cardElement.appendChild(cardDetail);
     }
     if (card.description) {
@@ -42,25 +38,27 @@ function createCard(card, parent) {
         parent.appendChild(cardElement);
     }
     else elements.push(cardElement);
+
+    let button = cardElement.querySelector('* > img');
+    button.addEventListener('click', e => {
+        cardElement.querySelectorAll('* > .card').forEach(child => {
+            child.style.display = (button.style.transform != '') ? 'none' : 'block';
+        });
+        if (parent) {
+            cardElement.querySelector('* > .card-desc').style.display = (button.style.transform != '') ? 'none' : 'block';
+
+        }
+        button.style.transform = (button.style.transform != '') ? '' : 'rotate(180deg)';
+    });
 }
 
 cards.forEach(card => createCard(card));
 
 for (let index = 0; index < elements.length; index++) {
     let card = elements[index];
-    let clicked = cards[index].detail.img;
     if (index > 5) {
         card.style.display = 'none';
     }
-
-    let button = card.querySelector('* > img');
-    button.addEventListener('click', e => {
-        clicked = !clicked;
-        card.querySelectorAll('* > .card').forEach(child => {
-            child.style.display = (!clicked) ? 'block' : 'none';
-        });
-        button.style.transform = (!clicked) ? 'rotate(180deg)' : '';
-    });
     cardContainer.appendChild(card);
 }
 

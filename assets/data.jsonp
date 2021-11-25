@@ -1,16 +1,10 @@
 cards = 
 [
     {
-        "detail": {
-            "p": "Jakarta Utara",
-            "img": false
-        },
+        "detail": "Jakarta Utara",
         "childrens": [
             {
-                "detail": {
-                    "p": "TPA Rukun Jaya",
-                    "img": false
-                },
+                "detail": "TPA Rukun Jaya",
                 "description": {
                     "text": [
                         "Lorem Ipsum",
@@ -19,10 +13,7 @@ cards =
                 }
             },
             {
-                "detail": {
-                    "p": "TPA Supra Sampah",
-                    "img": false
-                },
+                "detail": "TPA Supra Sampah",
                 "description": {
                     "text": [
                         "Lorem Ipsum",
@@ -33,16 +24,10 @@ cards =
         ]
     },
     {
-        "detail": {
-            "p": "Jakarta Selatan",
-            "img": false
-        },
+        "detail": "Jakarta Selatan",
         "childrens": [
             {
-                "detail": {
-                    "p": "TPA Hebat Kesatuan",
-                    "img": false
-                },
+                "detail": "TPA Hebat Kesatuan",
                 "description": {
                     "text": [
                         "Lorem Ipsum",
@@ -53,91 +38,61 @@ cards =
         ]
     },
     {
-        "detail": {
-            "p": "Jakarta Timur",
-            "img": false
-        },
+        "detail": "Jakarta Timur",
         "childrens": [
 
         ]
     },
     {
-        "detail": {
-            "p": "Jakarta Barat",
-            "img": false
-        },
+        "detail": "Jakarta Barat",
         "childrens": [
 
         ]
     },
     {
-        "detail": {
-            "p": "Tangerang",
-            "img": false
-        },
+        "detail": "Tangerang",
         "childrens": [
 
         ]
     },
     {
-        "detail": {
-            "p": "Bogor",
-            "img": false
-        },
+        "detail": "Bogor",
         "childrens": [
 
         ]
     },
     {
-        "detail": {
-            "p": "Bekasi",
-            "img": false
-        },
+        "detail": "Bekasi",
         "childrens": [
 
         ]
     },
     {
-        "detail": {
-            "p": "Bandung",
-            "img": false
-        },
+        "detail": "Bandung",
         "childrens": [
 
         ]
     },
     {
-        "detail": {
-            "p": "Semarang",
-            "img": false
-        },
+        "detail": "Semarang",
         "childrens": [
 
         ]
     },
     {
-        "detail": {
-            "p": "Yogyakarta",
-            "img": false
-        },
+        "detail": "Yogyakarta",
         "childrens": [
 
         ]
     },
     {
-        "detail": {
-            "p": "Surabaya",
-            "img": false
-        },
+        "detail": "Surabaya",
         "childrens": [
 
         ]
     },
     {
-        "detail": {
-            "p": "Malang",
-            "img": false
-        },
+        "detail": "Malang",
         "childrens": [
 
         ]
