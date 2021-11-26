@@ -5,7 +5,80 @@
     padding: 0;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #87e56e0d;
+    padding: 1.25vw 5vw;
+    box-shadow: 0px 1px 1px 1px #524b4b1a;
+    background: linear-gradient( 90deg, #7fdd65 3.98%, #87e56e 26.6%, #97f361 54.92%, #b3f941 117.6%);
+}
+
+.navbar-title button {
+    display: none;
+}
+
+nav h1 {
+    font-size: min(7.5vw, 3rem);
+    box-sizing: border-box;
+    color: #1d1534;
+}
+
+nav h1::before {
+    content: "Sip";
+    color: #51854ae0;
+}
+
+.navbar-links-container {
+    display: flex;
+    justify-content: end;
+    box-sizing: border-box;
+    align-items: center;
+    outline: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: min(3.5vw, 1.25em);
+    font-weight: 600;
+    color: #1d1534;
+    margin: 0 2.5vw;
+    outline: none;
+}
+
 iframe {
     width: 100%;
 }
 
+@media (max-width:500px) {
+
+    nav {
+        padding: 0;
+        flex-flow: column;
+    }
+
+    .navbar-title {
+        align-items: center;
+        padding: 1.25vw 5vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-title button {
+        display: block;
+        padding: 2.5vw 4vw;
+    }
+
+    .navbar-links-container {
+        display: none;
+        padding: 0.5rem 0 0 0;
+        flex-flow: column;
+        align-items: stretch;
+    }
+
+    .navbar-links-container a {
+        margin: 0;
+        padding: 0.25rem 0.5rem;
+        outline: black solid 1px;
+    }
+}
