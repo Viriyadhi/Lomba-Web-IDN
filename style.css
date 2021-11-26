@@ -46,6 +46,10 @@ nav a {
     outline: none;
 }
 
+iframe {
+    width: 100%;
+}
+
 @media (max-width:500px) {
 
     nav {
