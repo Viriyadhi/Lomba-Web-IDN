@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.banner{
+    padding: 0;
+    margin: 0;
+    background-image: url('assets/Header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 800px;
+}
+.content{
+    padding: 14vh 10vh 14vh 15vh;
+    display: flex;
+    justify-content: flex-start;
+}
+.content-banner{
+    padding: 10vh 13vh 0 0;
+}
+.content-banner h2{
+    color: #fff;
+    font-weight: 600;
+    font-size: 3.4rem;
+}
+.content-banner p{
+    margin: 1vh 0 0 0;
+    color: #fff;
+    text-align: justify;
+    text-justify: auto;
+    line-height: 32px;
+    font-weight: 500;
+}
+.image-content-banner{
+    flex-basis: 30%;
+}
+.course{
+    padding: 0 0 13vh 0;
+    margin: 13vh auto 0vh auto;
+    box-sizing: border-box;
+    background-image: url('assets/BackgroundCourse1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-container{
+    display: flex;
+    background-color: #D7F7BC;
+    justify-content: space-around;
+    width: 80%;
+    margin: 7.3vh auto 0vh auto;
+    border-radius: 25px;
+}
+.card-container img{
+    padding: 0.8vh 1.3vh 1.5vh 2.6vh;
+}
+.desc{
+    display: inline-block;
+    width: 50%;
+    letter-spacing: 1.5;
+}
+.desc h1{
+    font-weight: 600;
+    font-size: 2.25rem;
+    margin-top: 2.6vh;
+}
+.text-desc{
+    font-weight: 300;
+    font-size: 0.813rem;
+    margin: 1.7vh 0 2.6vh 0;
+    text-align: justify;
+}
+.btn{
+    height: 50%;
+    width: 32.0vh;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color:#1D1534;
+    background:#98EB51;
+    align-self: center;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 5px;
+    border-radius: 1.875rem;
+    cursor: pointer;
+    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+.btn:hover, .btn:focus, .btn:active{
+    box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+@media (max-width: 1286px){
+    .content{
+        padding: 6vh 2vh 8vh 6vh;
+    }
+    .content-banner{
+        padding: 10vh 2vh 0 0;
+    }
+    .content-banner h2 {
+        font-size: 2.4rem;
+    }
+    .image-content-banner img{
+        width: 500px;
+    }
+}
+@media (max-width:1100px) {
+    .image-content-banner img{
+        width: 420px;
+    }
+    .content-banner{
+        padding: 7vh 0vh 0 0;
+    }
+}
+@media (max-width: 950px){
+    .banner{
+        background-image: url('assets/Header\(2\).png');
+        min-height: 850px;
+    }
+    .content{
+        flex-direction: column-reverse;
+        padding: 4vh 1vh 4vh 2vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .content-banner{
+        padding: 0vh 3vh 0 3vh;
+    }
+    .content-banner h2{
+        text-align: center;
+    }
+}
+@media (max-width: 800px){
+    .image-content-banner img{
+        width: 350px;
+    }
+    .content-banner h2{
+        font-size: 2rem;
+    }
+    .content-banner p{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 640px){
+    .image-content-banner img{
+        width: 280px;
+    }
+    .content-banner h2{
+        font-size: 1.7rem;
+    }
+    .content-banner p{
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 450px){
+    .image-content-banner img{
+        width: 200px;
+    }
+    .content-banner h2{
+        font-size: 1.3rem;
+    }
+    .content-banner p{
+        font-size: 0.7rem;
+    }
+}
+@media (max-width: 300px){
+    .image-content-banner img{
+        width: 170px;
+    }
+    .content-banner h2{
+        font-size: 1rem;
+    }
+    .content-banner p{
+        font-size: 0.7rem;
+    }
+}
