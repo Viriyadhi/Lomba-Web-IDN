@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 3rem min(10vw, 500px);
+    background-color: #1d1534;
+    color: white;
+    gap: 1.5vw;
+}
+
+#header-h1 {
+    font-size: min(3.7vw, 3rem);
+    font-weight: 600;
+}
+
+header h2 {
+    font-weight: 400;
+    font-size: min(3.7vw, 3rem);
+    padding-top: min(1vw, 20rem);
+    padding-bottom: min(1vh, 1rem);
+}
+
+header p {
+    font-weight: 400;
+    font-size: min(2.5vw, 1.4rem);
+    margin-bottom: 3rem;
+}
+
+.embed-video {
+    margin: auto;
+    padding-top: min(1.2vh, 3rem);
+    width: 55vw;
+}
+
+.header-img {
+    width: 100%;
+    background-color: transparent;
+}
+
+header>img {
+    object-fit: contain;
+}
+
+main {
+    display: grid;
+    padding: 0 min(5%, 8rem);
+    grid-template-areas: "download download picture" "live live live";
+    background-image: url(./assets/main-bg.png);
+    background-repeat: no-repeat;
+    background-position: 0 -25vw;
+    background-size: cover;
+}
+
+main>img {
+    grid-area: picture;
+}
+
+.e-book-download {
+    gap: 2rem;
+    justify-items: center;
+    grid-area: download;
+    display: grid;
+    position: relative;
+    top: -15rem;
+    width: 90%;
+    grid-template-areas: "title title title" "image desc desc" "download download download";
+}
+
+.e-book-download h1 {
+    width: 100%;
+    grid-area: title;
+    font-size: 4rem;
+}
+
+.e-book-download p {
+    grid-area: desc;
+    font-size: 1.5rem;
+}
+
+.e-book-download img {
+    grid-area: image;
+    object-fit: contain;
+    object-position: top;
+}
+
+.e-book-download a {
+    grid-area: download;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    font-size: 2.25rem;
+    width: fit-content;
+    padding: 0.75rem 5rem;
+    background-color: #98eb51;
+    border-radius: 15px;
+}
+
+.e-book-live {
+    gap: 4rem;
+    padding: 10rem 0;
+    grid-area: live;
+    display: grid;
+    grid-template-areas: "image title title" "image link link" "image desc desc" "image date time";
+}
+
+.e-book-live img {
+    grid-area: image;
+}
+
+.e-book-live h1 {
+    grid-area: title;
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.e-book-live span {
+    font-size: 2.5rem;
+    grid-area: link;
+}
+
+.e-book-live span::after {
+    content: "https://github.com/Viriyadhi/Lomba-Web-IDN";
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+.e-book-live>p {
+    grid-area: desc;
+    padding: 0 5rem;
+}
+
+.e-book-live div {
+    display: flex;
+    align-items: center;
+}
+
+.e-book-live div img {
+    width: 2rem;
+}
