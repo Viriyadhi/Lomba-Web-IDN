@@ -9,7 +9,7 @@ const iframe = document.getElementsByTagName('iframe')[0];
 function setIframeSize() {
     const iframeContent = iframe.contentDocument; 
     const iframeBody = iframeContent.body;
-    const iframeDiv = iframeBody.querySelectorAll('body > div');
+    const iframeDiv = iframeBody.querySelectorAll('body > div, body > main');
     const iframeLastChildRect = iframeDiv[iframeDiv.length - 1].getBoundingClientRect();
 
     iframe.style.height = (iframeLastChildRect.y + iframeLastChildRect.height) + 'px';
@@ -18,3 +18,11 @@ function setIframeSize() {
 iframe.addEventListener('load' , setIframeSize);
 
 window.addEventListener('resize', setIframeSize);
+
+
+document.querySelectorAll('.navbar-links-container>a').forEach(link => {
+    link.addEventListener('click', e => {
+        document.querySelector('iframe').src = `pages/${link.getAttribute('href')}/${link.getAttribute('href')}.html`;
+        e.preventDefault();
+    });
+});
