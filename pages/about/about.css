@@ -60,7 +60,7 @@ header h1::after {
     border-radius: 0 20vw 0 0 / 0 20vw 0 0;
     margin-top: 10rem;
     padding: 1rem;
-    background-color: #1D1534;
+    background-color: #1d1534;
 }
 
 .main-part-2 p {
@@ -72,7 +72,7 @@ header h1::after {
     border-radius: 0 0 0 20vw / 0 0 0 20vw;
     margin: 1rem 0;
     padding: 1rem 5vw;
-    background-color: #7AD781;
+    background-color: #7ad781;
 }
 
 .main-part-3 p {
@@ -84,4 +84,4 @@ header h1::after {
     width: 30%;
     float: right;
     margin: 2rem;
-} 
+}
