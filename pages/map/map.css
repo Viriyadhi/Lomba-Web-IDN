@@ -4,7 +4,7 @@
 }
 
 header {
-    background-color: #1D1534;
+    background-color: #1d1534;
     background-image: url(../../assets/curvy-map-page.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -18,7 +18,7 @@ header {
     align-items: center;
     margin: auto;
     justify-content: center;
-    gap: min(20% ,10rem);
+    gap: min(20%, 10rem);
 }
 
 .top-map h1 {
@@ -34,7 +34,7 @@ header {
     top: 2.75vw;
 }
 
-main > img {
+main>img {
     width: min(80%, 1300px);
     object-fit: contain;
     margin: 5rem auto;
@@ -56,28 +56,28 @@ main > img {
     color: inherit;
 }
 
-.card-container > .card {
-    background-color: #1D1534;
+.card-container>.card {
+    background-color: #1d1534;
     color: white;
 }
 
-.card-container > .card:nth-child(even) {
-    background-color: #7AD781;
+.card-container>.card:nth-child(even) {
+    background-color: #7ad781;
     color: black;
 }
 
 .card-detail {
     display: flex;
     align-items: center;
-    padding: 0 min(5vw,2rem);
+    padding: 0 min(5vw, 2rem);
 }
 
 .card p {
     color: inherit;
-    font-size: min(4.5vw, 1.5rem);
-    padding: min(2.5vh, 1.5rem);
+    font-size: min(4vw, 1.5rem);
+    padding: min(2.5vh, 10rem);
     flex: 2;
-    white-space: nowrap;
+    word-wrap: break-word;
 }
 
 .card-detail img {
@@ -104,7 +104,8 @@ main > img {
     font-size: 1.5rem;
 }
 
-.map-show-more::before, .map-show-more::after {
+.map-show-more::before,
+.map-show-more::after {
     content: "";
     display: inline;
     margin: 0 1rem;

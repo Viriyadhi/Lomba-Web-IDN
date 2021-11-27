@@ -4,12 +4,13 @@ cards =
         "detail": "Jakarta Utara",
         "childrens": [
             {
-                "detail": "TPA Rukun Jaya",
+                "detail": "Bank Sampah Hijau Selaras Mandiri",
                 "description": {
                     "text": [
-                        "Lorem Ipsum",
-                        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed dolorem maiores, corrupti minima perferendis iusto quam ipsa debitis voluptatibus, labore ab tempora magnam ratione similique iste obcaecati excepturi laudantium ut veritatis eaque quas tempore reprehenderit. Reiciendis, architecto, voluptate eos tempora explicabo sunt repudiandae a, velit quis vitae veniam dolore in."
-                    ]
+                         "Kompleks Angkasa Pura Blok PQRS RT:14 RW:06 Kelurahan, RT.14/RW.11, Kebon Kosong, Kemayoran, Central Jakarta City, Jakarta 10630",
+                           "Buka jam : 09.00 - 16.00","Telepon : 0859 - 6969- 6969 "
+                           
+                                     ]
                 }
             },
             {
