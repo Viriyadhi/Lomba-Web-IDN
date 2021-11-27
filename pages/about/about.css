@@ -26,7 +26,7 @@ header h1 {
 
 header img {
     object-fit: contain;
-    width: 40vw;
+    width: 30vw;
 }
 
 header h1::after {
@@ -52,7 +52,7 @@ header h1::after {
 
 .main-part-1 img {
     float: left;
-    width: 40%;
+    width: 20vw;
     margin: 2.5rem;
 }
 
@@ -76,7 +76,7 @@ header h1::after {
 }
 
 .main-part-3 p {
-    color: white;
+    color: black;
     padding: 4rem 4vw;
 }
 
@@ -84,4 +84,38 @@ header h1::after {
     width: 30%;
     float: right;
     margin: 2rem;
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        margin: auto;
+    }
+    header img {
+        display: none;
+    }
+    .main-part-1 {
+        margin: 1rem 0;
+        display: grid;
+        grid-template-areas: "sip" "image" "desc";
+    }
+    .main-part-1 h1 {
+        grid-area: sip;
+        margin: 0;
+        padding: 0;
+    }
+    .main-part-1 img {
+        grid-area: image;
+        float: none;
+        width: 75%;
+    }
+    .main-part-1 h2 {
+        grid-area: desc;
+        padding: 0;
+    }
+    .main-part-2 {
+        margin-top: 0;
+    }
+    .main-part-3 img {
+        display: none;
+    }
 }

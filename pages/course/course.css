@@ -10,7 +10,7 @@
     padding: 5rem min(15vw, 5rem);
     padding-bottom: 15rem;
     gap: 2rem;
-    background-image: url('../../assets/course/Header.png');
+    background-image: url("../../assets/course/Header.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -20,13 +20,13 @@
 }
 
 .banner h2 {
-    font-size: min(4vw, 3rem);
+    font-size: min(5vw, 3rem);
     color: white;
 }
 
 .banner p {
     color: white;
-    font-size: min(2vw, 1.25rem);
+    font-size: min(3vw, 1.25rem);
 }
 
 .content-banner {
@@ -40,7 +40,7 @@
     flex-flow: column;
     gap: 3.5rem;
     padding: 0 min(10vw, 7.5rem);
-    background-image: url('../../assets/course/course-bg-card.png');
+    background-image: url("../../assets/course/course-bg-card.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -48,7 +48,7 @@
 .card-container {
     display: flex;
     align-items: center;
-    background-color: #D7F7BC;
+    background-color: #d7f7bc;
     border-radius: 1.5rem;
     padding: 1rem;
     gap: 2rem;
@@ -59,20 +59,20 @@
 }
 
 .card-container h1 {
-    font-size: min(3vw, 1.5rem);
+    font-size: min(4vw, 1.5rem);
 }
 
 .card-container p {
-    font-size: min(2vw, 1rem);
+    font-size: min(3vw, 1rem);
 }
 
 .card-container a {
     text-decoration: none;
-    background-color: #98EB51;
+    background-color: #98eb51;
     white-space: nowrap;
     padding: min(1.75vw, 1rem) min(2.5vw, 2.5rem);
     border-radius: 1.75rem;
-    font-size: min(2vw, 1rem);
+    font-size: min(4vw, 1rem);
     color: black;
     font-weight: bold;
 }
@@ -89,12 +89,12 @@
     gap: 2rem;
 }
 
-.faq > h2 {
-    font-size: 3rem;
+.faq>h2 {
+    font-size: min(10vw, 3rem);
     text-align: center;
 }
 
-.faq > hr {
+.faq>hr {
     border: 3px solid black;
     background-color: black;
     border-radius: 1rem;
@@ -102,8 +102,27 @@
 
 .faq-card {
     margin: 0 min(10vw, 7.5rem);
-    border: 2px solid #98EB51BD;
+    border: 2px solid #98eb51bd;
     padding: 1rem;
     border-radius: 1vw;
     box-shadow: 0px 4px 4px #00000085;
+}
+
+@media (max-width: 500px) {
+    .banner {
+        flex-flow: column;
+        align-items: center;
+    }
+    .banner img {
+        width: 80%;
+    }
+    .card-container {
+        flex-flow: column;
+    }
+    .card-container img {
+        width: 50%;
+    }
+    .faq-card {
+        margin: 0 2%;
+    }
 }

@@ -23,7 +23,7 @@
     width: 55%;
 }
 
-.main-container > div {
+.main-container>div {
     flex: 2;
     display: flex;
     flex-direction: column;
@@ -133,20 +133,24 @@
 }
 
 .map {
-    background-color: #F2F0F4;
+    background-color: #f2f0f4;
 }
 
 .map-container {
-    display: flex;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-areas: "title image" "desc image";
     width: min(95%, 1400px);
     margin: auto;
 }
 
 .map-container h2 {
+    grid-area: title;
     padding: 0 0 0 7rem;
     font-size: clamp(2.25rem, 6vw, 8rem);
     white-space: nowrap;
-    color: #1D1534;
+    color: #1d1534;
 }
 
 .map-container h2::before {
@@ -157,17 +161,18 @@
     left: -5rem;
     transform: rotate(-10deg);
     display: block;
-    color: #55AD7A;
+    color: #55ad7a;
 }
 
 .map-container p {
+    grid-area: desc;
     margin: 2rem 0 0 7rem;
     font-size: 1.5rem;
 }
 
 .map-container a {
-    color: #1D1534;
-    background-color: #98EB51;
+    color: #1d1534;
+    background-color: #98eb51;
     text-decoration: none;
     font-size: 2.5rem;
     padding: 0.4rem 2rem;
@@ -178,58 +183,45 @@
 }
 
 .map-container img {
-    width: 45%;
+    grid-area: image;
+    width: min(25vw, 35rem);
     object-fit: contain;
+    object-position: center;
 }
 
-@media (max-width:500px) {
+@media (max-width: 500px) {
     .main-container {
         flex-flow: column-reverse;
         text-align: center;
     }
-
-    .main-container > img {
+    .main-container>img {
         width: 100%;
     }
-
-    .class-container > h2 {
+    .class-container>h2 {
         text-align: center;
     }
-
-    .class-container > div {
+    .class-container>div {
         flex-flow: column;
         gap: 1.5rem;
     }
-
-    .class-card > a {
+    .class-card>a {
         margin: 0;
     }
-
     .map-container {
-        flex-flow: column;
-        align-items: center;
+        grid-template-areas: "title" "image" "desc";
         padding: 5rem 0;
     }
-    
     .map-container h2 {
         padding: 0;
         text-align: center;
     }
-
     .map-container p {
         margin: 0;
-        position: relative;
-        top: 40vw;
     }
-
     .map-container a {
-        margin: auto;
-        position: relative;
-        top: 50vw;
+        margin: 3rem auto;
     }
-
     .map-container img {
-        position: relative;
-        top: -35vw;
+        width: 50vw;
     }
 }
