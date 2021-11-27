@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    display: block;
+    overflow: clip !important;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+.banner {
+    display: flex;
+    padding: 5rem min(15vw, 5rem);
+    padding-bottom: 40%;
+    gap: 2rem;
+    background-image: url('assets/Header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner img {
+    width: 45%;
+}
+
+.banner h2 {
+    font-size: min(4vw, 3rem);
+    color: white;
+}
+
+.banner p {
+    color: white;
+    font-size: min(2vw, 1.25rem);
+}
+
+.content-banner {
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+}
+
+.course {
+    display: flex;
+    flex-flow: column;
+    gap: 3.5rem;
+    padding: 0 min(10vw, 7.5rem);
+    background-image: url('assets/course-bg-card.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    background-color: #D7F7BC;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.card-container div {
+    flex: 1;
+}
+
+.card-container h1 {
+    font-size: min(3vw, 1.5rem);
+}
+
+.card-container p {
+    font-size: min(2vw, 1rem);
+}
+
+.card-container a {
+    text-decoration: none;
+    background-color: #98EB51;
+    white-space: nowrap;
+    padding: min(1.75vw, 1rem) min(2.5vw, 2.5rem);
+    border-radius: 1.75rem;
+    font-size: min(2vw, 1rem);
+    color: black;
+    font-weight: bold;
+}
+
+.card-container img {
+    width: 20%;
+    object-fit: contain;
+}
+
+.faq {
+    padding: min(10vw, 6rem);
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+}
+
+.faq > h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.faq > hr {
+    border: 3px solid black;
+    background-color: black;
+    border-radius: 1rem;
+}
+
+.faq-card {
+    margin: 0 min(10vw, 7.5rem);
+    border: 2px solid #98EB51BD;
+    padding: 1rem;
+    border-radius: 1vw;
+    box-shadow: 0px 4px 4px #00000085;
+}
