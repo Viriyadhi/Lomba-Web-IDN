@@ -3,15 +3,6 @@
     padding: 0;
 }
 
-html {
-    display: block;
-    overflow: clip !important;
-}
-
-html::-webkit-scrollbar {
-    display: none;
-}
-
 .main {
     background: linear-gradient( 90deg, #7fdd65 3.98%, #87e56e 26.6%, #97f361 54.92%, #b3f941 117.6%);
     z-index: 2;
